@@ -31,6 +31,14 @@
     grid-template-columns: repeat(auto-fill , minmax(320px , 1fr));
     gap: 40px;
 }
+@media (max-width: 567px) {
+    .grid-3 {
+        display: grid;
+        grid-template-columns:minmax(250px , 1fr);
+        gap: 20px;
+        place-content: center;
+    }
+}
 .form-control:focus,
 .btn-primary:focus {
     border-color: var(--main-color) !important;
@@ -163,6 +171,7 @@ img {
     }
     .nav-links .container  h2 {
         display: flex;
+        font-size: 30px;
     }
 }
 .nav-links .container .links {
